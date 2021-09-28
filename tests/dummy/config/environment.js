@@ -23,13 +23,14 @@ module.exports = function (environment) {
     },
 
     'field-guide': {
-      name: 'Product Name',
-      copyright: 'This is the default copyright string - update before publishing',
+      name: 'Ember SlimGuide',
+      tagLine: 'Example Field Guide',
+      copyright: 'This isn\'t a real styleguide, it is a copy of the Ember Styleguide as a demo for a talk',
 
       social: [{
         name: 'github',
-        title: 'Design System Documentation - Repository',
-        link: 'https://github.com/empress/field-guide?update-with-your-repo-url'
+        title: 'This Repo',
+        link: 'https://github.com/mansona/ember-slimguide'
       }]
     },
   };

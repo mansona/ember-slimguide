@@ -1,0 +1,27 @@
+:root {
+  --sidebar-width: 16rem;
+}
+
+.sidebar-container {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: var(--sidebar-width) minmax(0, 1fr) var(--sidebar-width);
+  margin: auto;
+  max-width: var(--container-width);
+  padding: var(--spacing-6) var(--grid-margin);
+}
+
+.sidebar-container > *:not(.es-sidebar):not(.es-sidebar-toggle) {
+  grid-column: 1 / span 2;
+}
+
+.sidebar-container > .es-sidebar + .es-sidebar-toggle + * {
+  grid-column: 2 / span 2;
+}
+
+@media (max-width: 768px) {
+  .sidebar-container {
+    display: block;
+    padding: var(--spacing-4) var(--grid-margin);
+  }
+}
