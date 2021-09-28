@@ -1,5 +1,5 @@
 {
-  "name": "slim-one",
+  "name": "ember-slimguide",
   "version": "0.0.0",
   "description": "A test for bottled-ember",
   "keywords": [
@@ -17,7 +17,8 @@
   "scripts": {
     "build": "ember build --environment=production",
     "start": "ember serve",
-    "test": "npm-run-all lint test:*"
+    "test": "npm-run-all lint test:*",
+    "prepublishOnly": "rm -rf dist && npm run build"
   },
   "dependencies": {
     "ember-cli-babel": "^7.26.6",
